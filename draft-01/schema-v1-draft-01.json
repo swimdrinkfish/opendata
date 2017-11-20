@@ -366,14 +366,14 @@
                     "description": "The latitude of this coordinate, in numerical decimal format.",
                     "type": "number",
                     "minimum": -90.0,
-                    "maximim": 90.0
+                    "maximum": 90.0
                 },
                 "longitude":
                 {
                     "description": "The longitude of this coordinate, in numerical decimal format.",
                     "type": "number",
                     "minimum": -90.0,
-                    "maximim": 90.0
+                    "maximum": 90.0
                 }
             }
         }
