@@ -313,7 +313,7 @@
                 "hours":
                 {
                     "description": "How many hours this geometric mean (temporal) sample was collected in.",
-                    "kind": "number",
+                    "type": "number",
                     "minimum": 0
                 }
 
