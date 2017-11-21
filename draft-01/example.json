@@ -18,18 +18,18 @@
         },
         "location":
         {
-            "id": "8073",
-            "name": "Bathurst Quay",
-            "coordinate":
-            {
-                "latitude": 43.636436,
-                "longitude": -79.396927
-            }
+		"id": "8073",
+		"name": "Bathurst Quay",
+		"coordinate":
+		{
+			"latitude": 43.636436,
+			"longitude": -79.396927
+		}
         },
         "sample":
         {
-            "collectionTime": "2017-10-02T08:00:00-05:00",      
-            "location":
+		"collectionTime": "2017-10-02T08:00:00-05:00",      
+		"location":
 	        {
 	            "id": "8073-1",
 	            "name": "Bathurst Quay - Sample Location #1",
