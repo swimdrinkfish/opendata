@@ -39,15 +39,15 @@
 	                "longitude": -79.396927
 	            }
 	        },  
-			"type": {
-				"kind" : "geomean",
-				"variant" : "temporal",
-				"hours" : 1
-			},
+		"type": {
+			"kind" : "geomean",
+			"variant" : "temporal",
+			"hours" : 1
+		},
 	        "substance": "ecoli",
-			"method": "9223B_colilert",
-			"units": "cfu",
-			"result": 232.3
+		"method": "9223B_colilert",
+		"units": "cfu",
+		"result": 232.3
         }
     }]
 }
