@@ -324,9 +324,9 @@ temporal - A temporal geometric mean, comprised of samples collected over a peri
 </table>
 
 
-** ***_variant_*** is required if ***_kind_*** is specified as a ***_geomean_***. Otherwise, it is omitted.*
+** ***_variant_*** is required if ***_kind_*** is specified as a ***_geomean_*** - Otherwise, it is omitted.*
 
-*** ***_hours_*** is required if ***_variant_*** is included and specified as “temporal”. Otherwise, it is omitted.*
+*** ***_hours_*** is required if ***_variant_*** is included and specified as ***_temporal_*** - Otherwise, it is omitted.*
 
 #### Location Object Reference
 
