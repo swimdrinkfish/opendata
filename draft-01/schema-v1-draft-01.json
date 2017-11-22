@@ -217,7 +217,10 @@
                                 "description": "A description indicating the unit count for the sample result, for example cfu/100mL or mpn/100mL",
                                 "enum": [
                                     "cfu",
-                                    "mpn"
+                                    "mpn",
+                                    "cce",
+                                    "cells",
+                                    "micro"
                                 ]
                             },
                             "result":
