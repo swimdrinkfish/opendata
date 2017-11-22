@@ -22,7 +22,7 @@ For example, a water quality sample document published by Lake Ontario Waterkeep
 
 `ca.waterkeeper/bathurst-2017-11-20-A1`
 
-The `Reverse FQDN of Original Publisher` portion is a string, conforming to the standard reverse FQDN format already used by various programming languages and document implementations (for example, Java package naming schemes). As with all domain name variants, the required length of the first label is between **2 **and **6 **characters and the maximum length of any subsequent label is 64 characters (including the preceding "." character). Only characters valid in domain names (a-z, A-Z, 0-9, and -) are valid.  
+The `Reverse FQDN of Original Publisher` portion is a string, conforming to the standard reverse FQDN format already used by various programming languages and document implementations (for example, Java package naming schemes). As with all domain name variants, the required length of the first label is between **2** and **6** characters and the maximum length of any subsequent label is 64 characters (including the preceding "." character). Only characters valid in domain names (a-z, A-Z, 0-9, and -) are valid.  
 
 The `Locally Unique Identifier portion` is a string with no specified format other than a limitation to characters valid in domain names (a-z, A-Z, 0-9, and -) and a maximum length of 64 characters. 
 
@@ -34,11 +34,11 @@ The schema files provided as part of this standard enforce the described GUID fo
 
 As each sample described by this standard is assigned a globally unique identification (GUID) by the original publisher, this standard allows two methods by which records being issued may reference other existing records.
 
-**Revocation: **A record issued in this standard can indicate that a previously issued record has been effectively "revoked". This is useful in instances where a publishing entity or organization is correcting previously issued record data, or is issuing new record data using more precise/accurate measurement methods. For example, a record issued using a predictive modelling method and be revoked by a second record when laboratory sample data becomes available.
+**Revocation:** A record issued in this standard can indicate that a previously issued record has been effectively "revoked". This is useful in instances where a publishing entity or organization is correcting previously issued record data, or is issuing new record data using more precise/accurate measurement methods. For example, a record issued using a predictive modelling method and be revoked by a second record when laboratory sample data becomes available.
 
 Please note that it is considered a violation of the standard to revoke a GUID from another organization. The reverse FQDN portion of the original record and the revoking record should match before an entity or organization processing ingested records should consider the revocation valid. The validation schema makes no direct attempt to prevent cross-organization revocation from occurring, but consuming entities or organization are encouraged to account for this prohibition when processing ingested records.
 
-**Referencing: **Using a "references" object, a record issued in this standard can reference any other record(s). This is useful for grouping together samples that should be logically collected together.
+**Referencing:** Using a "references" object, a record issued in this standard can reference any other record(s). This is useful for grouping together samples that should be logically collected together.
 
 This standard has no opinion as to whether or not record references should be contained within a single organization (based on the reverse FQDN portion of the GUID). Entities or organizations consuming records in this format can opt to consider cross-organization referencing valid or invalid based on their own internal policies. 
 
