@@ -46,9 +46,7 @@
                     "guid":
                     {
                         "description": "A globally unique identification for this sample result, in the format of reverse-fqdn/result-identififer. No two individual sample results should share the same GUID.",
-                        "type": "string",
-                        "pattern": "^[A-Za-z]{2,6}(\\.[A-Za-z0-9-]{1,63})+\/[A-Za-z0-9-]{1,64}$",
-                        "minLength": 3
+                        "$ref": "#/definitions/guid"
                     },
                     "publicationTime":
                     {
@@ -70,9 +68,7 @@
                     "revokes":
                     {
                         "description": "If this field is present, this result record revokes the specified result record, effectively declaring the mentioned record void.",
-                        "type": "string",
-                        "pattern": "^[A-Za-z]{2,6}(\\.[A-Za-z0-9-]{1,63})+\/[A-Za-z0-9-]{1,64}$",
-                        "minLength": 3
+                        "$ref": "#/definitions/guid"
                     },
                     "references":
                     {
@@ -86,9 +82,8 @@
                             {
                                 "guid":
                                 {
-                                    "type": "string",
-                                    "pattern": "^[A-Za-z]{2,6}(\\.[A-Za-z0-9-]{1,63})+\/[A-Za-z0-9-]{1,64}$",
-                                    "minLength": 3
+                                	"description": "A globally unique ID, referencing another sample result related to this one.",
+                                    "$ref": "#/definitions/guid"
                                 }
                             }
                         }
@@ -128,9 +123,9 @@
                         "required": [
                             "collectionTime",
                             "location",
-                            "substance",
-                            "method",
                             "type",
+                            "method",
+                            "substance",
                             "units",
                             "result"
                         ],
@@ -242,6 +237,13 @@
     },
     "definitions":
     {
+    	"guid": 
+    	{
+			"description": "A globally unique identification in the format of reverse-fqdn/result-identififer.",
+			"type": "string",
+			"pattern": "^[A-Za-z]{2,6}(\\.[A-Za-z0-9-]{1,63})+\/[A-Za-z0-9-]{1,64}$",
+			"minLength": 3
+    	},
         "sampleTypeBasic":
         {
             "description": "Basic sample types. These require no further description other than specifying one of these types.",
@@ -249,6 +251,7 @@
                 "kind"
             ],
             "additionalProperties": false,
+            "type" : "object",
             "properties":
             {
                 "kind":
@@ -270,6 +273,7 @@
                 "variant"
             ],
             "additionalProperties": false,
+            "type" : "object",
             "properties":
             {
                 "kind":
@@ -297,6 +301,7 @@
                 "hours"
             ],
             "additionalProperties": false,
+            "type" : "object",
             "properties":
             {
                 "kind":
@@ -327,6 +332,7 @@
             "description": "A location object.",
             "type": "object",
             "additionalProperties": false,
+            "type" : "object",
             "required": [
                 "id",
                 "name",
@@ -358,6 +364,7 @@
             "description": "A coordinate describing a geographical location.",
             "type": "object",
             "additionalProperties": false,
+            "type" : "object",
             "required": [
                 "latitude",
                 "longitude"
