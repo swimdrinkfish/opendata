@@ -6,7 +6,7 @@ Version 1.0 Draft-01
 
 For field names, constraints, and other reference information please refer to the reference.md file within this folder:
 
-[https://github.com/swimdrinkfish/opendata/blob/master/draft-01/reference.md](https://github.com/swimdrinkfish/opendata/blob/master/draft-01/reference.md)
+[https://github.com/swimdrinkfish/opendata/blob/master/draft-01/REFERENCE.md](https://github.com/swimdrinkfish/opendata/blob/master/draft-01/REFERENCE.md)
 
 ## Tools and Libraries
 
