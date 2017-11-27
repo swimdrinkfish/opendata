@@ -10,7 +10,7 @@ For field names, constraints, and other reference information please refer to th
 
 ## Tools and Libraries
 
-When implementing against this standard, a variety of tools, libraries, and validators available to assist you:
+When implementing against this standard, a variety of tools, libraries, and validators are available to assist you:
 
 [http://json-schema.org/implementations.html](http://json-schema.org/implementations.html)
 
@@ -18,7 +18,7 @@ Please note that this standard is implemented against draft-04 of the JSON Schem
 
 ## Commentary and Issue Reporting
 
-If you have a comment about the current version of this draft, lease open an issue here on GitHub:
+If you have a comment about the current version of this draft, please open an issue here on GitHub:
 
 [https://github.com/swimdrinkfish/opendata/issues](https://github.com/swimdrinkfish/opendata/issues)
 
