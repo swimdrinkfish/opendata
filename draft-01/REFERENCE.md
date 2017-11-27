@@ -204,7 +204,7 @@ When referenced in the Document Field Reference, field types refer to the follow
     <td>guid</td>
     <td>GUID</td>
     <td>Yes</td>
-    <td>An identifier for this location.</td>
+    <td>An object describing the sample result data. See “Sample Object Reference”, below.</td>
   </tr>
 </table>
 
