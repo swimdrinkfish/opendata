@@ -1,23 +1,40 @@
 # Open Data Standard for Recreational Water Quality
-Introducing the open data standard project for automated recreational water quality data exchange. 
+Welcome! Swim Drink Fish is developing a standard for exchanging recreational water quality data. 
 
-In spring 2017 Swim Guide received a grant from the Canadian Internet Registration Authority (CIRA.ca) to develop the first ever standard for the automated exchange of recreational water quality data. [Visit our project website for more information.](www.recreationalwater.ca)
+We need your help. 
 
-We believe an open data standard for recreational water quality is critical. More and more recreational water quality data is being shared openly, yet there is little machine readable data being made available, and when there is, there is virtually no data format interoperability between providers. We need to ensure consistency in the way recreational water quality data is managed in order to promote the free exchange of information. 
+**Goals:** 
+* Create a single standard for presenting recreational water quality data, so that different people monitoring different waters can share their results
+* Make the standard open, so that everyone can see it and shape it
+* Ensure data is shared in a machine-readable format (i.e., not pdf, not csv, not RSS) so that sharing is easy and automated
+
+We need your help to refine the standard for the automated exchange of recreational water quality data.
+
+Read on for more information. [Visit our project website for more information.](www.recreationalwater.ca)
 
 # Background 
 
-The stated primary purpose of recreational water quality monitoring in Canada, the US, and around the world, is to protect public health and safety from contaminated water. However, it can be very difficult for the public to get an answer to the question “is is safe to swim?” The data is often difficult to get ahold of, or to interpret; it can be out of date, or simply not publicly accessible. 
+The purpose of recreational water quality monitoring is to protect public health from contaminated water. Even where water is tested, however, it can be very difficult for the public to get an answer to the question “is it safe to swim?” 
 
-Hundreds of counties, municipalities, park organizations and nonprofits regularly test water for indicator bacteria, algae, and/or other harmful pollutants. The data should be shared quickly (within 24 hours) and with as wide an audience as possible in order to help people avoid waterborne illnesses; yet, there is no technical standard for doing so. 
+Hundreds of counties, municipalities, park organizations and nonprofits regularly test water for indicator bacteria, algae, and/or other harmful pollutants. The data should be shared quickly (within 24 hours) and with as wide an audience as possible in order to help people avoid waterborne illnesses; yet, this rarely happens.
 
-Studies from the Environmental Protection Agency estimate the between 3%-8% of people experience acute gastrointestinal illness (AGI) after swimming. An estimated 3.5 million Americans get sick each year. In Canada, the number is approximately 400,000.  Children are the most likely to get sick. Poor disclosure of recreational water quality information 
+The public faces four common barriers when they try to understand the health of their beach or swimming hole:
+* Access. Much of the water quality information collected is never published. It lives in data silos that are not accessible to the public. 
+* Ease of Access. Public water quality does exist, but it can often be hard to find. It may be buried on websites or phone hotlines that aren’t easy for people to locate.
+* Clarity. The data is presented in a way that is difficult for the general public to understand and usually differs from place to place. 
+* Age. When data is shared, it is often very out of date. Many places, for example, still only publish annual or monthly testing results.
 
-Since 2011 Swim Guide spends thousand of hours each summer manually compiling water quality information from websites (some using legacy technologies), phone hotlines, spreadsheets so that 1.5 million people can access beach water information. 
+Lack of water quality information means that people - often unknowingly - swim in contaminated waters. Studies from the Environmental Protection Agency estimate the between 3%-8% of people experience acute gastrointestinal illness (AGI) after swimming. An estimated 3.5 million Americans get sick each year. In Canada, the number is approximately 400,000.  Children are the most likely to get sick. 
 
-Swim Guide, with support of the Canadian Internet Registration Authority, is currently developing the first-ever open standard for automated data exchange of recreational water quality information. 
+The main reason water quality is not shared more widely is because there is no standardized way to present data. 
 
-The open data standard will increase data exchange, improve public awareness of water quality, and aid researchers trying to protect recreational waters. The initiative will reduce the number of people getting sick from contact with polluted water and increase the number of environmental protection plans for communities affected by pollution.
+Since 2011, Swim Guide has spent thousand of hours each manually compiling water quality information from websites (some using legacy technologies), phone hotlines, and spreadsheets so that 1.5 million people can access beach water information. Meanwhile, regulators in different countries struggle to consolidate water quality results from different communities to inform policy and funding decisions.
+
+That’s why we decided to develop an open data exchange standard for recreational water quality information. 
+
+An open data standard will increase data exchange, improve public awareness of water quality, and aid researchers trying to protect recreational waters. The initiative will reduce the number of people getting sick from contact with polluted water and increase the number of environmental protection plans for communities affected by pollution.
+
+This project is funded by the Canadian Internet Registration Authority (CIRA.ca).
 
 ## Authors
 **Dylan Neild** (dylan@swimdrinkfish.ca)
@@ -52,13 +69,13 @@ Alberta Health Services
 
 **June 2018:** Launch of Open Data Standard
 
+# Invitation to Comment on the Open Data Standard for Recreational Water Quality - Version 1
 ## Current Status
 The current version of this standard proposal is version 1.0, draft-01. Any comments, discussion, and decisions relating to the draft-01 proposal will be implemented in subsequent draft releases, continuing until the comment period closes in February of 2018.
 
 Current version (draft-01):
 https://github.com/swimdrinkfish/opendata/tree/master/draft-01
 
-# Invitation to Comment on the Open Data Standard for Recreational Water Quality - Version 1
 ### Instructions for commenting
 We encourage you to contribute to the standard draft on Github: 
 https://github.com/swimdrinkfish/opendata/
