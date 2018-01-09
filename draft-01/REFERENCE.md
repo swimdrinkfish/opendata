@@ -270,7 +270,7 @@ When referenced in the Document Field Reference, field types refer to the follow
     <td>substance</td>
     <td>Enum</td>
     <td>Yes</td>
-    <td>A string enumeration value indicating the substance that was tested for when determining this sample result. For example, e.coli, a fecal indicator bacteria, or cyanobacteria.  For more information about the valid substance codes, please see “Appendix 2 - Substance Codes”.</td>
+    <td>A string enumeration value indicating the substance that was tested for when determining this sample result. For example, e.coli, enterococci, or cyanobacteria.  For more information about the valid substance codes, please see “Appendix 2 - Substance Codes”.</td>
   </tr>
   <tr>
     <td>units</td>
