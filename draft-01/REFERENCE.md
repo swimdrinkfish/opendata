@@ -520,6 +520,18 @@ with Internal Amplification Control
 (IAC) Assay</td>
   </tr>
   <tr>
+    <td>BioGX</td>
+    <td>qCPR</td>
+    <td>E.coli Species, no IAC. BioGX Product #201-0025
+Quantitative analysis</td>
+  </tr>
+  <tr>
+    <td>Method C</td>
+    <td>qCPR</td>
+    <td>EPA Draft Method C : Escherichia coli (e.coli) in Water by TaqMan Quantitative
+Polymerase Chain Reaction (qPCR) </td>
+  </tr>
+  <tr>
     <td>easygel</td>
     <td>Direct Inoculation (cfu)</td>
     <td>Detection of waterborne coliforms and E. coli with Coliscan Easygel</td>
