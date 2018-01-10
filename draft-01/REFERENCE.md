@@ -505,14 +505,14 @@ temporal - A temporal geometric mean, comprised of samples collected over a peri
   </tr>
   <tr>
     <td>1611.1</td>
-    <td>qCPR</td>
+    <td>qPCR</td>
     <td>Enterococci in Water by
 TaqMan® Quantitative Polymerase Chain
 Reaction (qPCR)</td>
   </tr>
   <tr>
     <td>1609.1</td>
-    <td>qCPR</td>
+    <td>qPCR</td>
     <td>Enterococci in Water
 by TaqMan® Quantitative
 Polymerase Chain Reaction (qPCR)
@@ -521,13 +521,13 @@ with Internal Amplification Control
   </tr>
   <tr>
     <td>BioGX</td>
-    <td>qCPR</td>
+    <td>qPCR</td>
     <td>E.coli Species, no IAC. BioGX Product #201-0025
 Quantitative analysis</td>
   </tr>
   <tr>
     <td>Method C</td>
-    <td>qCPR</td>
+    <td>qPCR</td>
     <td>EPA Draft Method C : Escherichia coli (e.coli) in Water by TaqMan Quantitative
 Polymerase Chain Reaction (qPCR) </td>
   </tr>
