@@ -520,7 +520,7 @@ with Internal Amplification Control
 (IAC) Assay</td>
   </tr>
   <tr>
-    <td>BioGX</td>
+    <td>BioGX-ecoli</td>
     <td>qPCR</td>
     <td>E.coli Species, no IAC. BioGX Product #201-0025
 Quantitative analysis</td>
