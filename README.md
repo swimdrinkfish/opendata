@@ -10,7 +10,7 @@ We need your help.
 
 We need your help to refine the standard for the automated exchange of recreational water quality data.
 
-Read on for more information. [Visit our project website for more information.](http://www.recreationalwater.ca)
+Read on, or [visit our project website for more information.](http://www.recreationalwater.ca)
 
 # Background 
 
