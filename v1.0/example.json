@@ -1,0 +1,57 @@
+{
+    "$schema": "https://raw.githubusercontent.com/swimdrinkfish/opendata/master/v1.0/schema.json#",
+    "documentTime": "2018-04-04T10:00:00-05:00",
+    "records": [
+    {
+        "guid": "ca.waterkeeper/8099-1-u3723",
+        "publicationTime": "2018-04-02T08:00:00-05:00",
+        "updateTime": "2018-04-03T08:00:00-05:00",
+        "organizationName": "Lake Ontario Waterkeeper (http://www.waterkeeper.ca)",
+		"references": [
+	        {
+	            "guid": "ca.waterkeeper/8099-1-u3721"
+	        },
+	        {
+	            "guid": "ca.waterkeeper/8099-1-u3722"
+	        }
+	    ],
+        "advisory":
+        {
+            "issued": false
+        },
+        "location":
+        {
+            "id": "8099",
+            "name": "The Main Public Beach",
+            "coordinate":
+            {
+                "latitude": 43.636436,
+                "longitude": -79.396927
+            }
+        },
+        "sample":
+        {
+            "collectionTime": "2018-03-31T16:00:00-05:00",
+            "location":
+            {
+                "id": "8099-1",
+                "name": "The Main Public Beach - Location #1",
+                "coordinate":
+                {
+                    "latitude": 43.636436,
+                    "longitude": -79.396927
+                }
+            },
+            "type":
+            {
+                "kind": "geomean",
+                "variant": "temporal",
+                "hours": 1
+            },
+            "substance": "ecoli",
+            "method": "9223B_colilert",
+            "units": "cfu",
+            "result": 299.7
+        }
+    }]
+}

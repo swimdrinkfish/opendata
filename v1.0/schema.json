@@ -1,0 +1,410 @@
+{
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "id": "https://raw.githubusercontent.com/swimdrinkfish/opendata/master/v1.0/schema.json#",
+    "title": "RecML 1.0",
+    "description": "JSON Schema draft-04 validation file for the RecML 1.0 Standard (http://www.recreationalwater.ca)",
+    "additionalProperties": false,
+    "required": [
+        "$schema",
+        "documentTime",
+        "records"
+    ],
+    "type": "object",
+    "properties":
+    {
+        "$schema":
+        {
+            "description": "A valid URL, referencing a validation schema for the RecML file (typically a public URL for this file if validating against draft-01)",
+            "type": "string",
+            "format": "uri"
+        },
+        "documentTime":
+        {
+            "description": "An RFC 3339 compliant date string, describing the date and time when the document was issued.",
+            "type": "string",
+            "format": "date-time"
+        },
+        "records":
+        {
+            "type": "array",
+            "minItems": 1,
+            "items":
+            {
+                "description": "A water quality sample result record, describing a single sample result. Multiple results can be described in a single document by enclosing each result in an array.",
+                "additionalProperties": false,
+                "required": [
+                    "guid",
+                    "publicationTime",
+                    "organizationName",
+                    "advisory",
+                    "location",
+                    "sample"
+                ],
+                "type": "object",
+                "properties":
+                {
+                    "guid":
+                    {
+                        "description": "A globally unique identification for this sample result, in the format of reverse-fqdn/result-identififer. No two individual sample results should share the same GUID.",
+                        "$ref": "#/definitions/guid"
+                    },
+                    "publicationTime":
+                    {
+                        "description": "The RFC 3339 date/time when this sample was first published.",
+                        "type": "string",
+                        "format": "date-time"
+                    },
+                    "updateTime":
+                    {
+                        "description": "The date/time when the value reported in this sample was last updated. Can be ommitted if this has always had the same value.",
+                        "type": "string",
+                        "format": "date-time"
+                    },
+                    "organizationName":
+                    {
+                        "description": "The name of the organization responsible for this water sample result.",
+                        "type": "string"
+                    },
+                    "revokes":
+                    {
+                        "type": "object",
+                        "additionalProperties": false,
+                        "required": ["guid"],
+                        "properties":
+                        {
+                            "guid":
+                            {
+                                "description": "A globally unique ID, referencing another sample document that is to be revoked.",
+                                "$ref": "#/definitions/guid"
+                            },
+                            "explanation":
+                            {
+                                "description": "An optional (but recommended) string explaning the reason why this revocation has been issued.",
+                                "type": "string"
+                            }
+                        }
+                    },
+                    "references":
+                    {
+                        "type": "array",
+                        "items":
+                        {
+                            "type": "object",
+                            "additionalProperties": false,
+                            "required": ["guid"],
+                            "properties":
+                            {
+                                "guid":
+                                {
+                                    "description": "A globally unique ID, referencing another sample result related to this one.",
+                                    "$ref": "#/definitions/guid"
+                                }
+                            }
+                        }
+                    },
+                    "advisory":
+                    {
+                        "description": "Does this sample represent a water use advisory based on the prevailing local water quality standard?",
+                        "type": "object",
+                        "additionalProperties": false,
+                        "required": [
+                            "issued"
+                        ],
+                        "properties":
+                        {
+                            "issued":
+                            {
+                                "description": "Has an advisory been issued for this location based on the prevailing local recreational water quality standard?",
+                                "type": "boolean"
+                            },
+                            "description":
+                            {
+                                "description": "An explanation or description of this advisory.",
+                                "type": "string"
+                            }
+                        }
+                    },
+                    "location":
+                    {
+                        "description": "The location for this sample. Individual samples can have specific locations, so this location should describe the general location such an access point or accepted location.",
+                        "$ref": "#/definitions/location"
+                    },
+                    "sample":
+                    {
+                        "description": "Information about the sample.",
+                        "type": "object",
+                        "additionalProperties": false,
+                        "required": [
+                            "collectionTime",
+                            "location",
+                            "type",
+                            "method",
+                            "substance",
+                            "units",
+                            "result"
+                        ],
+                        "properties":
+                        {
+                            "collectionTime":
+                            {
+                                "description": "The date/time when this sample was collected.",
+                                "type": "string",
+                                "format": "date-time"
+                            },
+                            "location":
+                            {
+                                "description": "The event location for this sample. This is the exact location where the sample was collected.",
+                                "$ref": "#/definitions/location"
+                            },
+                            "type":
+                            {
+                                "description": "The type of sample being described.",
+                                "type": "object",
+                                "oneOf": [
+                                {
+                                    "$ref": "#/definitions/sampleTypeBasic"
+                                },
+                                {
+                                    "$ref": "#/definitions/sampleTypeGeomeanSpatial"
+                                },
+                                {
+                                    "$ref": "#/definitions/sampleTypeGeomeanTemporal"
+                                }]
+                            },
+                            "method":
+                            {
+                                "description": "The method or system used to analyze this water quality sample and produce a result value.",
+                                "enum": [
+                                    "600-R-00-013",
+                                    "1103.1",
+                                    "1106.1",
+                                    "1600",
+                                    "1603",
+                                    "1604",
+                                    "9213D",
+                                    "10029",
+                                    "coliscan_MF",
+                                    "9221A",
+                                    "9221B",
+                                    "9221C",
+                                    "9221F",
+                                    "9222B",
+                                    "9222G",
+                                    "9223B",
+                                    "9223B_colilert",
+                                    "9223B_colilert18",
+                                    "1680",
+                                    "1681",
+                                    "1611.1",
+                                    "1609.1",
+                                    "easygel",
+                                    "petrifilm",
+                                    "544",
+                                    "545",
+                                    "546",
+                                    "aquatox",
+                                    "BASINS",
+                                    "cormix",
+                                    "DMR",
+                                    "EnDDaT",
+                                    "swimCast",
+                                    "nowCast",
+                                    "virtualBeach",
+                                    "wasp7"
+                                ]
+                            },
+                            "substance":
+                            {
+                                "description": "The substance being tested for.",
+                                "enum": [
+                                    "total_coliform",
+                                    "fecal_coliform",
+                                    "ecoli",
+                                    "enterococcus",
+                                    "cyanobacteria",
+                                    "microcystin",
+                                    "cylindrospermopsin"
+                                ]
+                            },
+                            "units":
+                            {
+                                "description": "A description indicating the unit count for the sample result, for example cfu/100mL or mpn/100mL",
+                                "enum": [
+                                    "cfu",
+                                    "mpn",
+                                    "cce",
+                                    "cells",
+                                    "micro"
+                                ]
+                            },
+                            "result":
+                            {
+                                "description": "The sample result as a numerical value. This can be used with the units field to determine the sample information.",
+                                "type": "number",
+                                "minimum": 0
+                            },
+                            "collector":
+                            {
+                                "description": "The name or email address of the person who collected this sample.",
+                                "type": "string"
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    },
+    "definitions":
+    {
+        "guid":
+        {
+            "description": "A globally unique identification in the format of reverse-fqdn/result-identififer.",
+            "type": "string",
+            "pattern": "^[A-Za-z]{2,6}(\\.[A-Za-z0-9-]{1,63})+\/[A-Za-z0-9-]{1,64}$",
+            "minLength": 3
+        },
+        "sampleTypeBasic":
+        {
+            "description": "Basic sample types. These require no further description other than specifying one of these types.",
+            "required": [
+                "kind"
+            ],
+            "additionalProperties": false,
+            "type": "object",
+            "properties":
+            {
+                "kind":
+                {
+                    "description": "The sample kind.",
+                    "enum": [
+                        "single",
+                        "composite",
+                        "predicted"
+                    ]
+                }
+            }
+        },
+        "sampleTypeGeomeanSpatial":
+        {
+            "description": "A geographic mean (spatial) sample type.",
+            "required": [
+                "kind",
+                "variant"
+            ],
+            "additionalProperties": false,
+            "type": "object",
+            "properties":
+            {
+                "kind":
+                {
+                    "description": "The sample kind, a geometric mean sample.",
+                    "enum": [
+                        "geomean"
+                    ]
+                },
+                "variant":
+                {
+                    "description": "Geometric mean variant: spatial.",
+                    "enum": [
+                        "spatial"
+                    ]
+                }
+            }
+        },
+        "sampleTypeGeomeanTemporal":
+        {
+            "description": "A geographic mean (temporal) sample type.",
+            "required": [
+                "kind",
+                "variant",
+                "hours"
+            ],
+            "additionalProperties": false,
+            "type": "object",
+            "properties":
+            {
+                "kind":
+                {
+                    "description": "The sample kind, a geometric mean sample.",
+                    "enum": [
+                        "geomean"
+                    ]
+                },
+                "variant":
+                {
+                    "description": "Geometric mean variant: temporal.",
+                    "enum": [
+                        "temporal"
+                    ]
+                },
+                "hours":
+                {
+                    "description": "How many hours this geometric mean (temporal) sample was collected in.",
+                    "type": "number",
+                    "minimum": 0
+                }
+
+            }
+        },
+        "location":
+        {
+            "description": "A location object.",
+            "type": "object",
+            "additionalProperties": false,
+            "type": "object",
+            "required": [
+                "id",
+                "name",
+                "coordinate"
+            ],
+            "properties":
+            {
+                "id":
+                {
+                    "description": "An identifier for this location, unique to the organization that issued this record.",
+                    "type": "string",
+                    "minLength": 1
+                },
+                "name":
+                {
+                    "description": "A name/description for this location.",
+                    "type": "string",
+                    "minLength": 1
+                },
+                "coordinate":
+                {
+                    "description": "The coordinate where this sample was located.",
+                    "$ref": "#/definitions/coordinate"
+                }
+            }
+        },
+        "coordinate":
+        {
+            "description": "A coordinate describing a geographical location.",
+            "type": "object",
+            "additionalProperties": false,
+            "type": "object",
+            "required": [
+                "latitude",
+                "longitude"
+            ],
+            "properties":
+            {
+                "latitude":
+                {
+                    "description": "The latitude of this coordinate, in numerical decimal format.",
+                    "type": "number",
+                    "minimum": -90.0,
+                    "maximum": 90.0
+                },
+                "longitude":
+                {
+                    "description": "The longitude of this coordinate, in numerical decimal format.",
+                    "type": "number",
+                    "minimum": -90.0,
+                    "maximum": 90.0
+                }
+            }
+        }
+    }
+}

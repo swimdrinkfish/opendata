@@ -1,0 +1,55 @@
+{
+    "$schema": "https://raw.githubusercontent.com/swimdrinkfish/opendata/master/v1.0/schema.json#",
+    "documentTime": "2017-10-02T10:00:00-05:00",
+    "records": [
+    {
+        "guid": "ca.waterkeeper/8073-1-water-sample-revocation",
+        "publicationTime": "2017-10-02T08:00:00-05:00",
+        "updateTime": "2017-10-02T08:00:00-05:00",
+        "organizationName": "Lake Ontario Waterkeeper (http://www.waterkeeper.ca)",
+        "revokes":
+        {
+            "guid": "ca.waterkeeper/8073-1-water-sample",
+            "explanation": "Due to an incubator temperature control issue, this sample is no longer considered valid."
+        },
+        "advisory":
+        {
+            "issued": true,
+            "description": "This advisory has been issued as this sample has exceeded the Ontario recreational water quality standards."
+        },
+        "location":
+        {
+            "id": "8073",
+            "name": "Bathurst Quay",
+            "coordinate":
+            {
+                "latitude": 43.636436,
+                "longitude": -79.396927
+            }
+        },
+        "sample":
+        {
+            "collectionTime": "2017-10-02T08:00:00-05:00",
+            "location":
+            {
+                "id": "8073-1",
+                "name": "Bathurst Quay - Sample Location #1",
+                "coordinate":
+                {
+                    "latitude": 43.636436,
+                    "longitude": -79.396927
+                }
+            },
+            "type":
+            {
+                "kind": "geomean",
+                "variant": "temporal",
+                "hours": 1
+            },
+            "substance": "ecoli",
+            "method": "9223B_colilert",
+            "units": "cfu",
+            "result": 232.3
+        }
+    }]
+}
