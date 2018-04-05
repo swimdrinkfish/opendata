@@ -160,9 +160,9 @@ When referenced in the Document Field Reference, field types refer to the follow
   </tr>
   <tr>
     <td>revokes</td>
-    <td>GUID</td>
+    <td>Object</td>
     <td>No</td>
-    <td>A globally unique identification string, indicating another sample document that is effectively revoked by the existence of this document. Please see the section "Sample Result Revocation and Referencing" above for more information.</td>
+    <td>An object indicating another sample document that is effectively revoked by the existence of this document. Please see the section "Sample Result Revocation and Referencing" above for more information.</td>
   </tr>
   <tr>
     <td>references</td>
@@ -208,6 +208,29 @@ When referenced in the Document Field Reference, field types refer to the follow
   </tr>
 </table>
 
+
+#### Revokes Object Reference
+
+<table>
+  <tr>
+    <td>Field Name</td>
+    <td>Type</td>
+    <td>Required</td>
+    <td>Description</td>
+  </tr>
+  <tr>
+    <td>guid</td>
+    <td>GUID</td>
+    <td>Yes</td>
+    <td>A GUID of another sample record that is being revoked by this one.</td>
+  </tr>
+  <tr>
+    <td>explanation</td>
+    <td>String</td>
+    <td>No</td>
+    <td>An optional explanation indicating the nature of this revokation. This would typically explain the reason the revokation is being issued.</td>
+  </tr>
+</table>
 
 #### Advisory Object Reference
 
