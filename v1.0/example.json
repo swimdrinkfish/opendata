@@ -17,7 +17,8 @@
 	    ],
         "advisory":
         {
-            "issued": false
+            "issued": true,
+        	"description": "This advisory has been issued as this sample has exceeded the Ontario recreational water quality standards."
         },
         "location":
         {
