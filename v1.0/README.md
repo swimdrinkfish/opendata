@@ -1,12 +1,12 @@
 # Recreational Water Quality Data Format Standard
 
-Version 1.0 Draft-01
+Version 1.0
 
 ## Technical Reference
 
 For field names, constraints, and other reference information please refer to the reference file within this folder:
 
-[https://github.com/swimdrinkfish/opendata/blob/master/v1.0-draft-01/REFERENCE.md](https://github.com/swimdrinkfish/opendata/blob/master/v1.0-draft-01/REFERENCE.md)
+[https://github.com/swimdrinkfish/opendata/blob/master/v1.0/REFERENCE.md](https://github.com/swimdrinkfish/opendata/blob/master/v1.0/REFERENCE.md)
 
 ## Tools and Libraries
 
@@ -18,7 +18,7 @@ Please note that this standard is implemented against draft-04 of the JSON Schem
 
 ## Commentary and Issue Reporting
 
-If you have a comment about the current version of this draft, please open an issue here on GitHub:
+If you have a comment about the current version of this standard, please open an issue here on GitHub:
 
 [https://github.com/swimdrinkfish/opendata/issues](https://github.com/swimdrinkfish/opendata/issues)
 
