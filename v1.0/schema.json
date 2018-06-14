@@ -401,8 +401,8 @@
                 {
                     "description": "The longitude of this coordinate, in numerical decimal format.",
                     "type": "number",
-                    "minimum": -90.0,
-                    "maximum": 90.0
+                    "minimum": -180.0,
+                    "maximum": 180.0
                 }
             }
         }
