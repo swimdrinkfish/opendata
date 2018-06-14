@@ -413,7 +413,7 @@ temporal - A temporal geometric mean, comprised of samples collected over a peri
     <td>longitude</td>
     <td>Number</td>
     <td>Yes</td>
-    <td>The longitude, as a floating point number. Must be a valid number between -90.0 and +90.0</td>
+    <td>The longitude, as a floating point number. Must be a valid number between -180.0 and +180.0</td>
   </tr>
 </table>
 
