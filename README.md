@@ -47,10 +47,10 @@ This project is funded by the Canadian Internet Registration Authority (CIRA.ca)
 [Swim Drink Fish Canada](http://www.swimdrinkfish.ca)
 
 **Chris Wilson** (cwilson@surfrider.org)
-[Surfrider Foundation](http://https://www.surfrider.org/)
+[Surfrider Foundation](https://www.surfrider.org/)
 
 **Rajbir Parmar** (Parmar.Rajbir@epa.gov)
-[Environmental Protection Agency, Office of Research and Development](http://https://www.epa.gov)
+[Environmental Protection Agency, Office of Research and Development](https://www.epa.gov)
 
 **Adam Griggs** (agriggs@rivernetwork.org )
 [River Network](https://www.rivernetwork.org/)
