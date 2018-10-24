@@ -583,6 +583,13 @@ Electrospray Ionization Tandem Mass Spectrometry
     <td>Determination of Total Microcystins and Nodularins in Drinking Water and Ambient Water by Adda Enzyme-Linked Immunosorbent Assay</td>
   </tr>
   <tr>
+    <td>701.0</td>
+    <td>Cyanobacteria and toxins detection</td>
+    <td>This method is used for the determination of total (extracellular and intracellular) microcystins –
+ADDA in surface water, ground water and finished drinking water. OHIO EPA DES
+Reporting Limit (RL): 0.30 µg/L</td>
+  </tr>
+  <tr>
     <td>aquatox</td>
     <td>Predictive / Statistical models</td>
     <td>AQUATOX</td>
