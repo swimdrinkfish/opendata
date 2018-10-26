@@ -516,6 +516,11 @@ temporal - A temporal geometric mean, comprised of samples collected over a peri
     <td>Multiple tube fermentation (MPN)</td>
     <td>Enzyme Substrate Coliform Test: 9223B Enzyme Substrate Test using Idexx Colilert-18</td>
   </tr>
+   <tr>
+    <td>D6503-99</td>
+    <td>Multiple tube fermentation (MPN)</td>
+    <td>A proprietary Defined Substrate Technology (DST) nutrient indicator to detect enterococci. : D6503-99 Idexx Enterolert, ASTM approved</td>
+  </tr>
   <tr>
     <td>1680</td>
     <td>Multiple tube fermentation (MPN)</td>
