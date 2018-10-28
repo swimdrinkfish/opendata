@@ -1,8 +1,8 @@
 {
     "$schema": "http://json-schema.org/draft-04/schema#",
     "id": "https://raw.githubusercontent.com/swimdrinkfish/opendata/master/v1.0.1/schema.json#",
-    "title": "RecML 1.0",
-    "description": "JSON Schema draft-04 validation file for the RecML 1.0 Standard (http://www.recreationalwater.ca)",
+    "title": "RecML 1.0.1",
+    "description": "JSON Schema draft-04 validation file for the RecML 1.0.1 Standard (http://www.recreationalwater.ca)",
     "additionalProperties": false,
     "required": [
         "$schema",
