@@ -71,10 +71,10 @@ Alberta Health Services
 
 # Invitation to Comment on the Open Data Standard for Recreational Water Quality - Version 1
 ## Current Status
-The current version of this standard proposal is version 1.0. Any comments, discussion, and decisions relating to the v1.0 standard will be implemented in subsequent releases.
+The current version of this standard proposal is version 1.0.1. Any comments, discussion, and decisions relating to the v1.0.1 standard will be implemented in subsequent releases.
 
-Current version (v1.0):
-https://github.com/swimdrinkfish/opendata/tree/master/v1.0
+Current version (v1.0.1):
+https://github.com/swimdrinkfish/opendata/tree/master/v1.0.1
 
 ### Instructions for commenting
 We encourage you to contribute to this standard on Github: 
@@ -99,6 +99,4 @@ If you want to direct your comment, question or issue to a specific person you c
 This forum supports the use of [Github flavored Markdown syntax.](https://help.github.com/categories/writing-on-github/)
 
 More info on the how-tos of contributing? [Click here](https://opensource.guide/how-to-contribute/)
-# Comment close date for version 1.0
-March 1, 2018
 
