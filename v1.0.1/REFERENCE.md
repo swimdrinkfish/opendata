@@ -548,11 +548,6 @@ with Internal Amplification Control
 (IAC) Assay</td>
   </tr>
   <tr>
-    <td>D6503-99</td>
-    <td>Multiple tube fermentation (MPN)</td>
-    <td>ASTM D6503 - 99 (Idexx Enterolert)</td>
-  </tr>
-  <tr>
     <td>biogx-ecoli</td>
     <td>qPCR</td>
     <td>E.coli Species, no IAC. BioGX Product #201-0025
