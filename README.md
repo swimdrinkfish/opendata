@@ -37,14 +37,11 @@ An open data standard will increase data exchange, improve public awareness of w
 This project is funded by the Canadian Internet Registration Authority (CIRA.ca).
 
 ## Authors
-**Dylan Neild** (dylan@swimdrinkfish.ca)
-[Swim Drink Fish Canada](http://www.swimdrinkfish.ca)
+**Dylan Neild** (dylan@codeandstrings.com)
 
-**Gabrielle Parent-Doliner** (gabrielle@theswimguide.org)
-[Swim Drink Fish Canada](http://www.swimdrinkfish.ca)
+**Gabrielle Parent-Doliner** (gabrielleparent@gmail.com)
 
-**Krystyn Tully** (krystyn@swimdrinkfish.ca)
-[Swim Drink Fish Canada](http://www.swimdrinkfish.ca)
+**Krystyn Tully** (krystyn@mac.com)
 
 **Chris Wilson** (cwilson@surfrider.org)
 [Surfrider Foundation](https://www.surfrider.org/)
