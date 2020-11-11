@@ -37,12 +37,6 @@ An open data standard will increase data exchange, improve public awareness of w
 This project is funded by the Canadian Internet Registration Authority (CIRA.ca).
 
 ## Authors
-**Dylan Neild** (dylan@codeandstrings.com)
-
-**Gabrielle Parent-Doliner** (gabrielleparent@gmail.com)
-
-**Krystyn Tully** (krystyn@mac.com)
-
 **Chris Wilson** (cwilson@surfrider.org)
 [Surfrider Foundation](https://www.surfrider.org/)
 
@@ -54,6 +48,13 @@ This project is funded by the Canadian Internet Registration Authority (CIRA.ca)
 
 **Joan Yee** (Joan.Yee@albertahealthservices.ca)
 Alberta Health Services
+
+**Dylan Neild** (dylan@codeandstrings.com)
+
+**Gabrielle Parent-Doliner** (gabrielleparent@gmail.com)
+
+**Krystyn Tully** (krystyn@mac.com)
+
 
 ## Project timeline
 **Oct 2017:** Expert workshop to lay the groundwork for the open data standard 
